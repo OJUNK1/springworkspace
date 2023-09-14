@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ojun.mvc.emp.mapper.EmpMapper">
+	<!-- 전체 조회 -->
+	<select id="selectEmpAllList" resultType="EmpVO">
+		<!-- ★★ c_id : cId -> getCId : mybatis가 cid로 바꿈. 매칭되는 필드가 없어짐. 컬럼명을 구성할때 
+			최소한 두단어 이상으로 단어를 구성 ex) ca_id 이런 식으로.. -->
+		SELECT   employee_id
+				 , first_name
+				 , last_name
+				 , email
+				 , phone_number
+				 , hire_date
+				 , job_id
+				 , salary
+				 , commission_pct
+				 , manager_id
+				 , department_id
+		FROM     employees
+		<where>
+		<!-- managerId는 int로 설정. int와 null은 비교할 수 없기 때문에, managerId != null 이 아니라 > 0 으로 비교하기!	 -->
+			<if test="managerId > 0">
+				manager_id = #{managerId}
+			</if>
+			<if test="departmentId > 0">
+				department_id = #{departmentId}
+			</if>
+		</where>
+		ORDER BY employee_id
+	</select>
+	<!-- 단건 조회 -->
+	<select id="selectEmpInfo" resultType="EmpVO">
+		SELECT   employee_id
+				 , first_name
+				 , last_name
+				 , email
+				 , phone_number
+				 , hire_date
+				 , job_id
+				 , salary
+				 , commission_pct
+				 , manager_id
+				 , department_id
+		FROM     employees
+		WHERE    employee_id = #{employeeId}
+	</select>
+	<!-- 등록 --> <!-- DML은 result가 전부 int이기 때문에 resultType 설정 하지 않아도 됨 -->
+	<insert id="insertEmpInfo" parameterType="EmpVO">
+		<selectKey keyProperty="employeeId" resultType="int" order="BEFORE">
+			SELECT NVL(MAX(employee_id), 0) + 1
+			FROM   employees
+		</selectKey>
+		INSERT INTO employees
+				(	
+					employee_id
+				  <if test="firstName != null and !firstName.equals('')">
+				  , first_name
+				  </if>
+				  , last_name
+				  , email
+				  , hire_date
+				  , job_id
+				  <if test="departmentId > 0">
+				  , department_id
+				  </if>				
+				)
+			   VALUES
+			    (
+			    	#{employeeId}
+			      <if test="firstName != null and !firstName.equals('')">
+			      , #{firstName}
+			      </if>
+			      , #{lastName}
+			      , #{email}
+			      <!-- hiredate는 null을 가질 수 없으며 기본 값이 null임. 따라서 choose문 사용 -->
+			      <choose>
+			      	<when test="hireDate  == null">
+			      		, SYSDATE
+			      	</when>
+			      	<otherwise>
+			      		, #{hireDate}
+			      	</otherwise>
+			      </choose>
+			      , #{jobId}
+			      <if test="departmentId > 0">
+			      , #{departmentId} 
+			      </if>			    
+			    )
+				
+	</insert>
+	<!-- 수정: 급여를 정해진 비율로 인상 -->
+	<update id="updateEmpSal">
+
+	</update>
+	<!-- 수정: 사원 정보 수정 -->
+	<update id="updateEmpInfo" parameterType="EmpVO">
+
+	</update>
+	<!-- 삭제 -->
+	<delete id="deleteEmpInfo" parameterType="EmpVO">
+
+	</delete>
+</mapper>  
+  

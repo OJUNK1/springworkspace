@@ -4,7 +4,10 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<settings>
+		<!-- DB의 표기법:스네이크 표기법 -> Java의 표기법:카멜 표기법 -->
 		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!--  java의 null값을 db의 무엇으로 인식할 것인지 -->
+		<setting name="jdbcTypeForNull" value="null"/>
 	</settings>
 	<typeAliases>
 		<package name="com.yedam.app" />
