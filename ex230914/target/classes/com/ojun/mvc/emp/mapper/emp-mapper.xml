@@ -74,7 +74,7 @@
 			      </if>
 			      , #{lastName}
 			      , #{email}
-			      <!-- hiredate는 null을 가질 수 없으며 기본 값이 null임. 따라서 choose문 사용 -->
+			      <!-- hiredate는 null을 가질 수 없으며 기본 값 또한 null임. 따라서 다중 조건을 처리하기 위해 choose문 사용 -->
 			      <choose>
 			      	<when test="hireDate  == null">
 			      		, SYSDATE
@@ -92,15 +92,38 @@
 	</insert>
 	<!-- 수정: 급여를 정해진 비율로 인상 -->
 	<update id="updateEmpSal">
-
+		UPDATE employees
+		SET    salary = salary * (1 + #{raise} / 100)
+		WHERE  employee_id = #{empId} 
 	</update>
 	<!-- 수정: 사원 정보 수정 -->
+	<!-- 1) 단건조회 선행되는 경우 -> 모든 항목에 데이터가 존재하므로, 전체 업데이트 실행 
+		 2) 개별 정보 수정(특정 칼럼에 대한 수정) -> Dynamic SQL 사용-->
+	
 	<update id="updateEmpInfo" parameterType="EmpVO">
-
+		UPDATE employees
+		<set>
+			<if test="firstName != null and !firstName.equals('')">
+				first_name = #{firstName},
+			</if>
+			<if test="email != null and !email.equals('')">
+				email = #{email},
+			</if>
+			<!--  set 을 사용 할 때, 넘어오는 값이 하나도 없으면 set이 사라짐. 따라서 salary = 1000을 통해 반드시 하나는 넘어갈 수 있도록 설정한 것. -->
+			<if test="salary lte 0">  <!--  lte은 <= 을 의미한다. -->
+				salary = 1000,
+			</if>
+			<if test="salary gt 0">  <!--  gt는 > 을 의미한다. -->
+				salary = #{salary}
+			</if>
+		</set>
+	    WHERE employee_id = #{employeeId}
 	</update>
 	<!-- 삭제 -->
-	<delete id="deleteEmpInfo" parameterType="EmpVO">
-
+	<delete id="deleteEmpInfo" parameterType="int">
+		DELETE
+		FROM   employees
+		WHERE  employee_id = #{eid}
 	</delete>
 </mapper>  
   
