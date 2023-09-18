@@ -24,7 +24,7 @@ public class EmpMapperTest {
 	//@Test
 	public void selectAllEmp() {
 		// 전체 조회
-		List<EmpVO> empList = empMapper.selectEmpAllList();
+		List<EmpVO> empList = empMapper.selectEmpAllList(new EmpVO());
 		assertNotNull(empList);
 	}
 

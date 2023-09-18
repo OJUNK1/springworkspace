@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.ojun.mvc.emp.mapper.EmpMapper;
@@ -25,9 +27,9 @@ public class EmpController {
 	public void getEmpInfoForm() {
 	}
 
-	// 위에 꺼랑 같은 의미. 커맨드 객체를 통해 data를 받는 경우, 매개 변수에 어떠한 어노테이션도 붙지 않는다. 
+	// 위에 꺼랑 같은 의미. 커맨드 객체를 통해 data를 받는 경우, 매개 변수에 어떠한 어노테이션도 붙지 않는다.
 	// 내가 무언가 돌려주는 데이터가 있을 때, model 사용
-	// 커맨드 객체 
+	// 커맨드 객체 사용했음.
 	@GetMapping("getEmp")
 	public String getEmpData(EmpVO empVO, Model model) {
 		EmpVO findVO = empMapper.selectEmpInfo(empVO);
@@ -58,5 +60,12 @@ public class EmpController {
 		EmpVO findVO = empMapper.selectEmpInfo(empVO);
 		model.addAttribute("empInfo", findVO);
 		return "empForm";
-	}		
+	}
+
+	@PostMapping("empInfoInsert")
+	public String empInfoInsert(@RequestBody EmpVO empVO) {
+		int result = empMapper.insertEmpInfo(empVO);
+		System.out.println("결과 : " + empVO.getEmployeeId());
+		return "empForm";
+	}
 }

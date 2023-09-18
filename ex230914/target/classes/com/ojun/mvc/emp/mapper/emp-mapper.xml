@@ -24,7 +24,7 @@
 			<if test="managerId > 0">
 				manager_id = #{managerId}
 			</if>
-			<if test="departmentId > 0">
+			<if test="departmentId != null and departmentId > 0">
 				department_id = #{departmentId}
 			</if>
 		</where>

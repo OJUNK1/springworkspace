@@ -8,7 +8,7 @@ import com.ojun.mvc.emp.service.EmpVO;
 
 public interface EmpMapper {
 	// 전체조회
-	public List<EmpVO> selectEmpAllList();
+	public List<EmpVO> selectEmpAllList(EmpVO empVO);
 
 	// 단건조회
 	public EmpVO selectEmpInfo(EmpVO empVO);
