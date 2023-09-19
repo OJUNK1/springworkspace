@@ -23,5 +23,5 @@ public interface EmpService {
 	   리턴 값이 Map으로 ..? 
 	   활용법 : ajax로 데이터를 돌려줄 때 주로 사용.
 	*/
-	public Map<String, Object> delete(List<Integer> list);
+	public Map<String, Object> deleteEmp(List<Integer> list);
 }

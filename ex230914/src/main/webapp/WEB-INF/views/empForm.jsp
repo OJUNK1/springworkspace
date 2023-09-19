@@ -69,7 +69,7 @@
 			let formObj = {};
 			$.each(formData, function(idx, obj) {
 				// 하나의 객체 => 하나의 필드로 전환
-				formObj[obj.name] = obj.value;
+				formObj[obj.name] = obj.value; // 넘어온 배열의 name 속성이 필드의 값이 되어야 하기 때문에 formObj[obj.name]
 			});
 			
 			console.log(formData, formObj);

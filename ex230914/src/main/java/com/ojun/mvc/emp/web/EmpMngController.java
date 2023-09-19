@@ -1,5 +1,7 @@
 package com.ojun.mvc.emp.web;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -57,7 +60,7 @@ public class EmpMngController {
 			result = "정상적으로 등록되었습니다. \n 등록된 사원의 번호는 " + empId + " 입니다.";
 		}
 		attr.addAttribute("type", "insert"); // addAttribute는 경로에 값이 붙음. return "redirect:empList?type=insert"; 와 같은 의미
-		attr.addFlashAttribute("result", result); // result 값은 controller를 거쳐서도 살아서, empList.jsp로 가 줘야 함.
+		attr.addFlashAttribute("result", result); // result 값은 controller를 거쳐서도 살아서, empList.jsp로 가 줘야 함. 새롭게 발생한 request, response에 result 값이 붙어서 감.
 		return "redirect:empList"; // redirect는 jsp를 부를 수 없고, controller를 호출하는 것이다. insert 후 결과가 반영된 전체 목록을 조회하기
 									// 위해서 redirect를 통해 empList controller를 부르는 것이다. return "emp/empList" 랑은 다름.
 									// 페이지가 중요한 게 아니다.
@@ -72,16 +75,33 @@ public class EmpMngController {
 		return "emp/empUpdate";
 	}
 
-	// 수정 - Process : ajax 처리 => 필수 어노테이션은 @ResponseBody !! @RequestBody는 필수 어노테이션은
-	// 아니다. json을 쓴다고 하면 ajax가 필수, 그러나 ajax 입장에서는 json data 필수 x 다른 방식으로도 데이터 전달 가능함.
+	/*
+	 * 수정 - Process : ajax 처리 => 필수 어노테이션은 @ResponseBody !! @RequestBody는 필수 어노테이션은
+	 * 아니다. json을 쓴다고 하면 ajax가 필수, 그러나 ajax 입장에서는 json data 필수 x 다른 방식으로도 데이터 전달
+	 * 가능함.
+	 */
 	@PostMapping("empUpdate")
 	@ResponseBody
 	public Map<String, String> empUpdateProcess(@RequestBody EmpVO empVO) {
 		return empService.updateEmp(empVO);
 	}
 
-	// 삭제 - 단건 삭제
-
-	// 삭제 - 선택 삭제(동시삭제)
-
+	// 삭제 - 단건 삭제 - ajax 처리
+	@GetMapping("empDelete")
+	@ResponseBody
+	public Map<String, Object> empInfoDelete(@RequestParam Integer employeeId) {
+		List<Integer> list = new ArrayList<>();
+		list.add(employeeId); // List는 아무 값도 없을 수 있고, 한 건만 있을 수 있음.
+		
+		return empService.deleteEmp(list); // map 통으로 넘기는 방법
+	}
+	
+	// 삭제 - 선택 삭제(동시삭제) - ajax 처리 [ 배열을 처리하기 위해서, 배열을 서버에 넘길 때 편한 게 json임.] 
+	@PostMapping("empDelete")
+	@ResponseBody
+	public boolean empListDelete(@RequestBody List<Integer> list) {
+		Map<String, Object> result = empService.deleteEmp(list);
+		
+		return (boolean) result.get("result"); //성공 여부만 돌려받는 방법
+	}
 }

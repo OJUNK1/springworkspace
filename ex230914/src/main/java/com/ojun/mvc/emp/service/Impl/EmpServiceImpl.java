@@ -73,7 +73,7 @@ public class EmpServiceImpl implements EmpService {
 	}
 
 	@Override
-	public Map<String, Object> delete(List<Integer> list) {
+	public Map<String, Object> deleteEmp(List<Integer> list) {
 		boolean isSuccessed = false; // 성공 유무
 		List<Integer> successList = new ArrayList<>(); // 성공 대상
 		int count = 0; // 성공 횟수
