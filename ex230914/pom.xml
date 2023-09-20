@@ -182,6 +182,12 @@
 			<version>1.16</version>
 		</dependency>
 
+		<!-- AOP -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
