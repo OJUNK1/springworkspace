@@ -7,6 +7,7 @@
 <title>사원 정보 등록</title>
 </head>
 <body>
+	<div align="center">
 	<form action="empInsert" method="post">
 		<div>
 			<label>first_name : <input type="text" name="firstName"></label>
@@ -29,5 +30,6 @@
 		<button type="submit">등록</button>
 		<button type="reset">취소</button>
 	</form>
+</div>
 </body>
 </html>

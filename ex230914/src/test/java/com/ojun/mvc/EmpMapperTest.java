@@ -16,7 +16,7 @@ import com.ojun.mvc.emp.mapper.EmpMapper;
 import com.ojun.mvc.emp.service.EmpVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@ContextConfiguration(locations = "file:src/main/webapp/WEB-INF/spring/database-context.xml")
 public class EmpMapperTest {
 	@Autowired
 	EmpMapper empMapper;
