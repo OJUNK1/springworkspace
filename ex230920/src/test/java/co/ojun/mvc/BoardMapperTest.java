@@ -20,7 +20,7 @@ public class BoardMapperTest {
 	BoardMapper boardMapper;
 	
 	@Test
-	public void all() {
+	public void 전체조회() {
 		List<BoardVO> boardList = boardMapper.selectAll();
 		assertNotNull(boardList);
 	}

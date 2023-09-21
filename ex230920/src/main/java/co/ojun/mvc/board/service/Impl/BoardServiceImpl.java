@@ -16,9 +16,8 @@ public class BoardServiceImpl implements BoardService {
 	BoardMapper boardMapper;
 
 	@Override
-	public List<BoardVO> getBoardList() {
-		List<BoardVO> list = boardMapper.selectAll();
-		return list;
+	public List<BoardVO> getBoardList() {	
+		return boardMapper.selectAll();
 	}
 
 	@Override
@@ -28,10 +27,11 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public int insertBoardInfo(BoardVO boardVO) {
+		
 		int result = boardMapper.insert(boardVO);
 
 		if (result == 1) {
-			return Integer.parseInt(boardVO.getBno());
+			return Integer.valueOf(boardVO.getBno());
 		} else {
 			return -1;
 		}
@@ -46,12 +46,11 @@ public class BoardServiceImpl implements BoardService {
 		} else {
 			return -1;
 		}
-
+		// return boardMapper.update(boardVO) == 1 ? Integer.valueOf(boardVO.getBno()) : -1;
 	}
 
 	@Override
-	public int deleteBoardInfo(int boardNo) {
-
+	public int deleteBoardInfo(int boardNo) { // 서로 다른 타입. string vs int..
 		int result = boardMapper.delete(boardNo);
 
 		if (result == 1) {
