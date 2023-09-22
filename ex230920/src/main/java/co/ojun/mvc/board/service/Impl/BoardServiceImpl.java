@@ -42,7 +42,7 @@ public class BoardServiceImpl implements BoardService {
 		int result = boardMapper.update(boardVO);
 
 		if (result == 1) {
-			return Integer.parseInt(boardVO.getBno());
+			return Integer.valueOf(boardVO.getBno());
 		} else {
 			return -1;
 		}

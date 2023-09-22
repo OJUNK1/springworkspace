@@ -12,16 +12,16 @@
 			<table>
 				<tr>
 					<th>글번호</th>
-					<td><input type="text" name="bno" value="${bno }" readonly></td> <!-- 필수값에 required 설정 -->
+					<td><input type="text" name="bno" value="${bno }" readonly></td>
 				</tr>
 				
 				<tr>
 					<th>제목</th>
-					<td><input type="text" name="title"></td> <!-- 필수값에 required 설정 -->
+					<td><input type="text" name="title"></td> <!-- 필수값에 required 설정 대신 js로-->
 				</tr>
 				<tr>
 					<th>작성자</th>
-					<td><input type="text" name="writer"></td> <!-- 필수값에 required 설정 -->
+					<td><input type="text" name="writer"></td> <!-- 필수값에 required 설정 대신 js로-->
 				</tr>
 				<tr>
 					<th>내용</th>
@@ -33,7 +33,7 @@
 				</tr>
 			</table>
 			<button type="button" onclick="location.href='boardList'">홈</button>
-			<button type="submit">등록</button>
+			<button type="button">등록</button>
 		</form>
 	</div>
 	<script>

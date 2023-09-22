@@ -46,16 +46,17 @@ public class BoardController {
 	public String insertForm(BoardVO boardVO, Model model) {
 		// 등록 페이지를 호출할 때 미리 primary key를 보여야하는 경우, Model이 필요함.. 예시) 사원 등록 시, 등록 form에서
 		// 자동으로 부여되는 사원번호가 미리 보여야하기 model을 써야 한다.
-		List<BoardVO> vo = boardService.getBoardList();
-		int lastIdx = vo.size() - 1;
-		
-		BoardVO lastBoard = vo.get(lastIdx);
-		
-		String lastBoardNo = String.format("%03d",Integer.valueOf(lastBoard.getBno()) + 1);
-
-		boardVO.setBno(lastBoardNo);
-		System.out.println(lastBoardNo);
-		model.addAttribute("bno", lastBoardNo);
+		/*
+		 * List<BoardVO> vo = boardService.getBoardList(); int lastIdx = vo.size() - 1;
+		 * 
+		 * BoardVO lastBoard = vo.get(lastIdx);
+		 * 
+		 * String lastBoardNo = String.format("%03d",Integer.valueOf(lastBoard.getBno())
+		 * + 1);
+		 * 
+		 * boardVO.setBno(lastBoardNo); System.out.println(lastBoardNo);
+		 * model.addAttribute("bno", lastBoardNo);
+		 */
 		
 		return "board/boardInsert";
 	}
@@ -87,7 +88,7 @@ public class BoardController {
 		int boardNo = boardService.updateBoardInfo(boardVO);
 
 		String result = null;
-
+		System.out.println(boardNo);
 		if (boardNo == -1) {
 			result = "수정 실패";
 			map.put("result", result);

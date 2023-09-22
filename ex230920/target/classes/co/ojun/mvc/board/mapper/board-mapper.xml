@@ -83,7 +83,7 @@
 				updatedate = SYSDATE
 			</if>
 		</set>
-		WHERE   bno =		 #{bno} 
+		WHERE   bno 	   = #{bno} 
 	</update>
 	
 	<delete id="delete" parameterType="int">

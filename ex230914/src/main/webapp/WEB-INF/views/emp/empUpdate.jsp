@@ -62,6 +62,7 @@
 				.done(result => { // .done = .success, done 은 연속적으로 사용이 가능. 
 					let message = '결과: ' + result['결과'] + ', ' + ', 대상 사원번호: ' + result['사원번호'];
 					alert(message);
+					console.log(message);
 				})
 				.fail(reject => console.log(reject)); // .fail = .error
 		}
