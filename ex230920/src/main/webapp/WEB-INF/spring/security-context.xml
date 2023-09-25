@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- resources 폴더 밑에 있는 파일들은 모두 security 적용하지 않음. -->
+	<security:http pattern="/resources/**" security="none" />
+
+	<security:http>
+		<!-- 페이지에 접근할 수 있는 권한에 대해서 설정. permitAll은 거의 모든 사람이 접근 가능하다는 의미. ex) mainpage -->
+		<security:intercept-url pattern="/top.jsp"
+			access="permitAll()" />
+		<!-- 특정한 권한을 가진 사람만 접근이 가능하다는 의미. -->
+		<security:intercept-url pattern="/admin/**"
+			access="hasAuthority('ROLE_ADMIN')" />
+		<!-- 위에서 checked 되지 않은 모든 페이지에 대해, 인증만 받았더라면 권한에 상관없이 접근 가능. -->
+		<security:intercept-url pattern="/**"
+			access="isAuthenticated()" />
+		<!-- form을 기반으로 login. login에 성공했다면 특정 경로(default-target-url)로 찾아간다는 의미. -->
+		<security:form-login default-target-url="/top.jsp" />
+		<!-- logout 하는 경로, 성공 시 어디로 가야할지 설정 logout-url은 우리가 설정 X. security에 내장. -->
+		<security:logout logout-url="/logout"
+			logout-success-url="/top.jsp" />
+		<!-- csrf  -->
+<!-- 		<security:csrf disabled="true" /> -->
+	</security:http>
+
+	<!-- Manager에 대한 설정. -->
+	<bean id="userDetailsService"
+		class="co.ojun.mvc.user.service.CustomUserDetailsService" />
+
+	<security:authentication-manager>
+		<security:authentication-provider
+			user-service-ref="userDetailsService" />
+	</security:authentication-manager>
+</beans>

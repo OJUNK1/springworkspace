@@ -26,11 +26,11 @@
 			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
-		
+
 		<multipart-config>
 			<location>C:\\temp</location> <!-- WAS, 즉 tomcat이 읽어들이는 공간. 기존에 없는 공간이면 읽어들이지 못 함. 임시로, 일시적으로 저장하는 공간임. -->
 			<max-file-size>20971520</max-file-size> <!-- 1MB * 20 -->
-			<max-request-size>41943040</max-request-size> <!--  40MB -->
+			<max-request-size>41943040</max-request-size> <!-- 40MB -->
 			<file-size-threshold>20971520</file-size-threshold> <!-- 20MB -->
 		</multipart-config>
 	</servlet>
@@ -52,6 +52,16 @@
 
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!--  Spring Security Filter -->
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 

@@ -31,7 +31,7 @@ public class BoardController {
 		model.addAttribute("boards", list);
 		return "board/boardList";
 	}
-
+	
 	// 단건 조회 : URI - boardInfo / Param - BoardVO / Return - board/boardInfo
 	@GetMapping("boardInfo")
 	public String selectOne(BoardVO boardVO, Model model) {
