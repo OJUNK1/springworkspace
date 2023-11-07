@@ -12810,3 +12810,160 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracledat
 2023-10-25 18:13:43,261 [Worker-122: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of exam2
 2023-10-25 18:13:43,261 [Worker-122: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for exam2
 2023-10-25 18:13:43,264 [Worker-122: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:37:40,307 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-25 18:38:05,529 [Worker-15: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ojun:mvc:1.0.0-BUILD-SNAPSHOT @ C:\Dev\springworkspace\ex230914\pom.xml.
+2023-10-25 18:38:08,749 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:08,759 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-25 18:38:08,768 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:08,770 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:08,775 [Worker-15: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ex230914
+2023-10-25 18:38:08,775 [Worker-15: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ex230914
+2023-10-25 18:38:08,781 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:09,542 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:09,544 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-25 18:38:09,547 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:09,548 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:13,549 [Worker-15: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:app:0.0.1-SNAPSHOT @ C:\Dev\springworkspace\ex230926\pom.xml.
+2023-10-25 18:38:20,287 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-25 18:38:20,288 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-25 18:38:20,289 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:20,308 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-25 18:38:20,324 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-25 18:38:20,324 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-25 18:38:20,324 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Dev\springworkspace\ex230926\src\test\resources
+2023-10-25 18:38:23,692 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:23,697 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-25 18:38:23,707 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:23,708 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:24,410 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-25 18:38:24,410 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-25 18:38:24,413 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:24,417 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-25 18:38:24,431 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-10-25 18:38:24,431 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-10-25 18:38:24,431 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Dev\springworkspace\ex230926\src\test\resources
+2023-10-25 18:38:25,130 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:25,134 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-25 18:38:25,149 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:25,150 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-25 18:38:25,874 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:25,875 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-25 18:38:25,890 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-25 18:38:25,891 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-27 10:56:08,104 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-27 10:56:27,507 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:27,515 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-27 10:56:27,523 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:27,525 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-27 10:56:29,567 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:29,569 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-27 10:56:29,575 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:29,576 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-27 10:56:30,380 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:30,381 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-27 10:56:30,384 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:30,386 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-27 10:56:30,541 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:30,543 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-27 10:56:30,547 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 10:56:30,548 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-27 11:03:33,659 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-27 11:03:41,027 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 11:03:41,044 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-27 11:03:41,069 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-27 11:03:41,071 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:21:31,567 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 09:22:00,359 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:22:00,366 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 09:22:00,374 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:22:00,375 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:22:10,704 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:22:10,706 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 09:22:10,710 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:22:10,712 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:58:55,516 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 09:59:02,601 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:02,607 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 09:59:02,615 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:02,616 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:59:03,307 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:03,309 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 09:59:03,311 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:03,312 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:59:04,420 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:04,422 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 09:59:04,425 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:04,426 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 09:59:04,617 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:04,619 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 09:59:04,622 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 09:59:04,623 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 10:30:39,295 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 10:30:54,878 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:54,884 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 10:30:54,892 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:54,893 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 10:30:56,522 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:56,528 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 10:30:56,531 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:56,533 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 10:30:57,261 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:57,264 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 10:30:57,267 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:57,268 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 10:30:57,485 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:57,486 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 10:30:57,489 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 10:30:57,490 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 14:12:10,834 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 14:12:17,789 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:17,796 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 14:12:17,810 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:17,813 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 14:12:18,706 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:18,707 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 14:12:18,710 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:18,711 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 14:12:18,927 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:18,929 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 14:12:18,932 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:18,934 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 14:12:19,077 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:19,078 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 14:12:19,080 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 14:12:19,088 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:39:50,646 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 17:39:56,691 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:39:56,699 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 17:39:56,707 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:39:56,710 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:39:57,689 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:39:57,690 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 17:39:57,699 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:39:57,702 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:40:01,511 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:40:01,512 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 17:40:01,515 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:40:01,516 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:40:01,675 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:40:01,677 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 17:40:01,679 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:40:01,680 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:57:03,773 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-10-30 17:57:21,408 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:21,415 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-10-30 17:57:21,423 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:21,425 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:57:22,526 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,528 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2023-10-30 17:57:22,531 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,533 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:57:22,712 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,713 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 17:57:22,717 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,718 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-10-30 17:57:22,885 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,886 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2023-10-30 17:57:22,888 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-10-30 17:57:22,890 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-11-07 09:04:45,357 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
