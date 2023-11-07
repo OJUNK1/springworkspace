@@ -14,11 +14,12 @@ import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @Slf4j
-public class Jpah2Application {
+public class JpaoracleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Jpah2Application.class, args);
+		SpringApplication.run(JpaoracleApplication.class, args);
 	}
+	
 	
 	 // CommandLineRunner >> main method 실행 시 함께 실행됨. 
 	 @Bean
@@ -56,4 +57,4 @@ public class Jpah2Application {
 	      log.info("");
 	    };
 	  }
-}
+}	
