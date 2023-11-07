@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Dev\\springworkspace\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\Dev\\webWorkspace\\JQUERY\\.git;C\:\\Dev\\springworkspace\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Dev\\webWorkspace\\JQUERY\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
