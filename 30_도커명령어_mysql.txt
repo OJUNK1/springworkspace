@@ -1,0 +1,82 @@
+docker 명령어
+-------------------------------------------------------------
+  docker -v
+  docker --help
+  docker 명령어 --help
+
+이미지 명령
+  docker build     <= 이미지 생성
+  docker images    <= 이미지 리스트
+  docker tag       <= 이미지 이름 변경
+  docker rmi       <= 이미지 삭제
+
+컨테이너 명령
+  docker run       <= 컨테이너 실행
+  docker ps        <= 컨테이너 리스트
+  docker logs      <= 컨테이너 로그 확인       
+  docker exec      <= 컨테이너 안으로 들어가기
+  docker stop      <= 컨테이너 중지
+  docker start     <= 컨테이너 시작
+  docker rm        <= 컨테이너 삭제
+
+도커허브 명령
+  docker login      <= 도커허브에 로그인
+  docker push       <= 도커허브에 이미지 업로드
+  docker pull       <= 도커허브에서 이미지 다운받기
+-------------------------------------------------------------
+
+■ 이미지 다운받고 컨테이너 실행
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=admin -d mysql:8.0
+
+ex) docker run -d -p [호스트 port]:[컨테이 port] -e [환경 변수]=[값] 
+                  -v [호스트경로]:[컨테이너경로] [docker image]:[tag] 
+
+   -d : 백그라운드 실행(--detach)
+   -e : 환경변수 설정(--env)
+   -p : 호스트OS와 컨테이너 포트 매핑(--publish)
+   -v : 호스트OS와 컨테이너 볼륨 매핑(--volume)
+   --name : 컨테이너 이름 지정
+
+■ 컨테이너 리스트 확인
+docker ps -a  
+
+   -a : 모든 컨테이너(all. 기본은 실행중인 컨테이너만 조회)
+
+■ 컨테이너 안으로 들어가기
+docker exec -it mysql bash      : 종료하고 나올때는 exit
+
+   -i : STDIN 열기(--interactive)
+   -t : TTY 할당(--tty)
+
+■ mysql 로그인
+# mysql -u root -p
+ 
+■ 데이터베이스, 테이블 생성
+sql> create database shop;
+show databases;
+show tables;
+use shop;		--데이터베이스 선택
+create table emp ( username varchar(20), password varchar(20) );
+insert into emp values ('scott','1111');
+select * from emp;
+
+■ mysql 로그아웃
+sql>exit
+
+■ 컨테이너 빠져나오기
+#exit
+
+■ 컨테이너 리스트 확인
+docker ps -a  
+
+■ 컨테이너 중지
+docker stop mysql
+
+■ 컨테이너 삭제
+docker rm mysql
+
+■ 이미지 리스트
+docker images
+
+■ 이미지 삭제
+docker rmi 이미지id
