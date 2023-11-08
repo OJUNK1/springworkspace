@@ -13007,3 +13007,18 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracledat
 2023-11-08 09:42:21,530 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
 2023-11-08 09:42:21,540 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-11-08 09:42:21,541 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-11-08 10:33:43,115 [Worker-37: Launching Executing install in C__Dev_springworkspace_ex230926] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Dev\springworkspace\ex230926
+2023-11-08 10:33:43,119 [Worker-37: Launching Executing install in C__Dev_springworkspace_ex230926] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install -Dstyle.color=always
+2023-11-08 10:34:03,391 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 10:34:03,391 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-11-08 10:34:03,392 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-11-08 10:34:03,473 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-11-08 10:34:03,479 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 10:34:03,479 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-11-08 10:34:03,479 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Dev\springworkspace\ex230926\src\test\resources
+2023-11-08 10:34:29,167 [Worker-41: Launching Executing install in C__Dev_springworkspace_ex230920] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Dev\springworkspace\ex230920
+2023-11-08 10:34:29,167 [Worker-41: Launching Executing install in C__Dev_springworkspace_ex230920] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install -Dstyle.color=always
+2023-11-08 10:34:40,794 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-11-08 10:34:40,798 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-11-08 10:34:40,799 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-11-08 10:34:40,800 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

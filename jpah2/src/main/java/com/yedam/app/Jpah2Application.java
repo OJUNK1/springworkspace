@@ -21,7 +21,7 @@ public class Jpah2Application {
 	}
 	
 	 // CommandLineRunner >> main method 실행 시 함께 실행됨. 
-	 // @Bean
+	  @Bean
 	  public CommandLineRunner demo(CustomerRepository repository) {
 	    return (args) -> {
 
